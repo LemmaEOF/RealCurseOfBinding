@@ -1,31 +1,34 @@
 {
   "schema_version": 1,
   "quilt_loader": {
-    "group": "io.github.cottonmc",
-    "id": "starter",
+    "group": "gay.lemmaeof",
+    "id": "realcurseofbinding",
     "version": "${version}",
     "metadata": {
-      "name": "Fabric Starter",
-      "icon": "assets/starter/icon.png",
-      "description": "Template for starting out Fabric mods",
+      "name": "Real Curse of Binding",
+      "icon": "assets/realcurseofbinding/icon.png",
+      "description": "A joke Ears addon to make the curse of binding do what it *really* should.",
       "license": "MIT",
       "contact": {
-        "sources": "https://github.com/CottonMC/FabricStarter"
+        "sources": "https://github.com/LemmaEOF/RealCurseOfBinding"
       }
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "environment": "*",
     "entrypoints": {
       "init": [
-        "io.github.cottonmc.starter.FabricStarter"
+        "gay.lemmaeof.realcurseofbinding.RealCurseOfBinding"
       ]
     },
     "depends": [
       {
         "id": "quilt_loader",
-        "versions": ">=0.17.0-"
+        "versions": "*"
+      },
+      {
+        "id": "ears",
+        "versions": "*"
       }
     ]
-  },
-  "mixin": "mixins.starter.json"
+  }
 }
